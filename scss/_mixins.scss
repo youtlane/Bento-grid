@@ -1,6 +1,44 @@
+@mixin layout-rec{
+    border-radius: 10px;
+    padding-left: 20px;
+}
 @mixin tall-rectangle{
     width: 258px;
     height: 416px;
-    border-radius: 10px;
-    padding-left: 20px;
+    @include layout-rec;
+}
+@mixin width-rectangle{
+    width: 545px;
+    height: 325px;
+    @include layout-rec;
+}
+
+@mixin card-tall-lightY{
+    @include tall-rectangle;
+    background-color: $yellow-light;
+}
+@mixin card-tall-darkY{
+    @include tall-rectangle;
+    background-color: $yellow-dark;
+}
+@mixin card-width-darkP{
+    @include width-rectangle;
+    background-color: $purple-dark;
+}
+
+
+@mixin c-center{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+@mixin c-center-I{
+    @include c-center;
+    align-items: center;
+}
+
+@mixin c-around{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
