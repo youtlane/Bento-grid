@@ -1,0 +1,33 @@
+body {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.container {
+  font-family: DM Sans, sans-serif;
+}
+.container .first-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 258px;
+  height: 416px;
+  border-radius: 10px;
+  padding-left: 20px;
+  background-color: hsl(31, 66%, 93%);
+  gap: 20px;
+}
+.container .first-card h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  background-color: hsl(31, 66%, 93%);
+}
+.container .first-card h2 span {
+  font-style: italic;
+  color: hsl(256, 67%, 59%);
+}
+
+/*# sourceMappingURL=styles.css.map */

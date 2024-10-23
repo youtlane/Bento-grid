@@ -1,0 +1,25 @@
+.container{
+    font-family: DM Sans, sans-serif;
+    
+    .first-card{
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        @include tall-rectangle;
+        background-color: $yellow-light;
+        gap: 20px;
+        h2{
+            font-size: 36px;
+            font-weight: 700; 
+            line-height: 1; 
+            background-color: $yellow-light;
+            span{
+                font-style: italic;
+                color: $purple-dark;
+            }
+
+        }
+
+    }
+}
+
