@@ -1,25 +1,83 @@
 .container{
     font-family: DM Sans, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
     
     .first-card{
-        display: flex; 
-        flex-direction: column; 
-        justify-content: center; 
-        @include tall-rectangle;
-        background-color: $yellow-light;
+        @include c-center;
+        @include card-tall-lightY;
         gap: 20px;
         h2{
             font-size: 36px;
             font-weight: 700; 
             line-height: 1; 
-            background-color: $yellow-light;
+            
             span{
                 font-style: italic;
                 color: $purple-dark;
             }
-
         }
+        img.first-card-img {
+            width: 200px;
+            object-fit: cover;
+        }
+    }
 
+    .second-card{
+        @include card-tall-darkY;
+        @include  c-around;
+        gap: 20px;
+        h2{
+            font-size: 36px;
+            line-height: 1; 
+            font-weight: 500;
+            
+        }
+        .second-card-img{
+            width: 220px;
+            object-fit: cover;
+        }
+    }
+
+    .third-card{
+        @include card-width-darkP;
+        @include c-center-I;
+        h1{
+            font-size: 50px;
+            font-weight: 700;
+            text-align: center;
+            line-height: 1; 
+            color: white;
+            span.txtY{
+                color: $yellow-dark;
+            }
+            span.txtI{
+                font-style: italic;
+            }
+        }
+        .third-card-img{
+            width: 190px;
+        }
+        p.txtW{
+            font-weight: 300;
+            color: white;
+        }
+    }
+
+    .fourth-card{
+        @include card-width-small-white;
+        border: 2px solid red;
+        .fourth-card-img{
+            width: 190px;
+            object-fit: cover;
+        }
+        h2{
+            
+            font-size: 50px;
+            line-height: 1; 
+            font-weight: 700;
+            
+        }
     }
 }
 
