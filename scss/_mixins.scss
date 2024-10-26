@@ -12,6 +12,11 @@
     height: 325px;
     @include layout-rec;
 }
+@mixin width-rectangle-small{    
+    width: 250px;
+    height: 245px;
+    @include layout-rec;
+}
 
 @mixin card-tall-lightY{
     @include tall-rectangle;
@@ -25,7 +30,10 @@
     @include width-rectangle;
     background-color: $purple-dark;
 }
-
+@mixin card-width-small-white{
+    @include width-rectangle-small;
+    background-color: white;
+}
 
 @mixin c-center{
     display: flex; 
